@@ -179,8 +179,10 @@ body {
     max-width: 80%;
     height: auto;
     border-radius: 30px;
+    border: 5px solid rgb(49, 49, 49);
+    box-shadow: 5px 5px 20px rgba(48, 48, 48, 0.699);
+    
 }
-
 
 
 /* ... other CSS code ... */
