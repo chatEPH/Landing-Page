@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chatEPH Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+
+        <div class="hamburger-menu" id="hamburgerMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    
+        <!-- Add the navigation menu -->
+        <nav class="nav-menu" id="navMenu">
+            <button class="nav-button">Try ChatEPH</button>
+            <button class="nav-button">About</button>
+            <button class="nav-button">Contact</button>
+            <button class="close-btn" id="closeBtn">&times;</button>
+        </nav>
+
+
+        <h1>Welcome to chatEPH</h1>
+        
+        <div class="gif-container">
+            <img src="cowgif.gif" alt="cowGIF">
+        </div>
+        <p>Your AI-Powered College Course Management Solution</p>
+        <button class="header-button">Get Started</button>
+    </header>
+    <section class="features">
+        <div class="feature">
+            <h2>Stay Organized</h2>
+            <p>Keep track of classes, assignments, and deadlines with ease.</p>
+        </div>
+        <div class="feature">
+            <h2>Personalized Assistance</h2>
+            <p>Get tailored support and resources based on your unique academic journey.</p>
+        </div>
+        <div class="feature">
+            <h2>Seamless Integration</h2>
+            <p>Works with your existing college systems for a smooth experience.</p>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="demogif-container">
+                <img src="demogif.gif" alt="demogif">
+            </div>
+            <div class="footer-text-button">
+                <p>Ready to revolutionize your college experience? Try chatEPH today!</p>
+                <button>Get Started</button>
+
+                <p style="font-size: 1.5rem; line-height: 50%; padding-top: 40px;">Or contact us at </p><a href="mailto:chatephelia@gmail.com" style="font-size: 1.5rem; line-height: 200%;">chatephelia@gmail.com</a>
+
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('hamburgerMenu').addEventListener('click', function() {
+    toggleNavMenu();
+});
+
+document.getElementById('closeBtn').addEventListener('click', function() {
+    toggleNavMenu();
+});
+
+function toggleNavMenu() {
+    document.getElementById('navMenu').classList.toggle('active');
+    // Update the CSS left property depending on the active state
+    if (document.getElementById('navMenu').classList.contains('active')) {
+        document.getElementById('navMenu').style.left = '0';
+    } else {
+        document.getElementById('navMenu').style.left = '-100%';
+    }
+}
+    </script>
+</body>
+</html>
