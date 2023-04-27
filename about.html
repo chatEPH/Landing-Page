@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About chatEPH</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="about-header">
+
+        <div class="hamburger-menu" id="hamburgerMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    
+        <nav class="nav-menu" id="navMenu">
+            <button class="nav-button">Button 1</button>
+            <button class="nav-button">Button 2</button>
+            <button class="nav-button">Button 3</button>
+            <span id="closeBtn" class="close-btn">&times;</span>
+        </nav>
+
+        <h1>About chatEPH</h1>
+    </header>
+
+    <section class="founders">
+        <div class="founder">
+            <img src="aagat.png" alt="Aagat Sapkota">
+            <h2>Aagat Sapkota</h2>
+            <ul>
+                <li>CS + Philosophy @ Williams</li>
+                <li>Incoming Software Engineer @ Millennium Asset Management</li>
+                <li>Founding Team at Plexus ($2M Seed Round)</li>
+                <li>Software Engineer Intern @ Agnostack</li>
+            </ul>
+        </div>
+        <div class="founder">
+            <img src="dante.png" alt="Dante Gutbrod">
+            <h2>Dante Gutbrod</h2>
+            <ul>
+                <li>Philosophy + Cognitive Science @ Williams</li>
+                <li>Wrestling Captain @ Williams</li>
+                <li>UX/Product Design Intern at ThinkCERCA</li>
+                <li>BTSNE Associate Board Member</li>
+            </ul>
+        </div>
+        
+    </section>
+
+    <section class="about-chatEPH" style="width: 70%; padding: 50px 50px 50px 50px; ">
+        <h2 style="font-size: 3rem;">The Story of ChatEPH</h2>
+        <p style="font-size: 1.5rem; line-height: 140%; padding-left: 20px;">
+            chatEPH was founded by Dante Gutbrod and Aagat Sapkota, two passionate students from Williams College. With their unique backgrounds in Philosophy, Cognitive Science, and Computer Science, they aimed to create an AI-Powered College Course Management Solution that revolutionizes the college experience for students and educators alike.
+        </p>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="demogif-container">
+                <img src="demogif.gif" alt="demogif">
+            </div>
+            <div class="footer-text-button">
+                <p>Ready to revolutionize your college experience? Try chatEPH today!</p>
+                <button>Get Started</button>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('hamburgerMenu').addEventListener('click', function() {
+            toggleNavMenu();
+        });
+
+        document.getElementById('closeBtn').addEventListener('click', function() {
+            toggleNavMenu();
+        });
+
+        function toggleNavMenu() {
+    document.getElementById('navMenu').classList.toggle('active');
+    // Update the CSS left property depending on the active state
+    if (document.getElementById('navMenu').classList.contains('active')) {
+        document.getElementById('navMenu').style.left = '0';
+    } else {
+        document.getElementById('navMenu').style.left = '-100%';
+    }
+}
+    </script>
+</body>
+</html>

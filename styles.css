@@ -10,12 +10,29 @@ body {
 
 
 .header {
-    background: linear-gradient(180deg, #4B0082 62.6%, #F5F5F5 91%);
+    background: linear-gradient(180deg, #4B0082 62.6%, #F5F5F5 92%);
         padding: 50px 0;
     text-align: center;
 }
 
+
+.about-header {
+    background-color: #4B0082;
+    padding: 50px 0;
+    text-align: center;
+}
+
+
+
+
 .header h1 {
+    color: #FFFFFF;
+    font-size: 5rem;
+    margin-bottom: 10px;
+    font-weight: bolder;
+}
+
+.about-header h1 {
     color: #FFFFFF;
     font-size: 5rem;
     margin-bottom: 10px;
@@ -173,6 +190,7 @@ body {
     text-align: center;
     padding: 20px 0;
     order: -1;
+    
 }
 
 .demogif-container img {
@@ -183,6 +201,7 @@ body {
     box-shadow: 5px 5px 20px rgba(48, 48, 48, 0.699);
     
 }
+
 
 
 /* ... other CSS code ... */
@@ -281,11 +300,53 @@ body {
 
 @media (max-width: 768px) {
     .header h1 {
-        font-size: 3rem; 
+        font-size: 3rem; /* Adjust the font size as desired */
     }
 
     .header p {
-        font-size: 1.7rem; 
+        font-size: 1.7rem; /* Adjust the font size as desired */
     }
 }
 
+.founders {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 50px;
+    background-color: #E6E6FA;
+}
+
+.founder {
+    flex: 0 0 45%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.founder img {
+    max-width: 200px; /* Adjust the size of the image as needed */
+    height: auto;
+    border-radius: 50%;
+}
+
+.founder h2 {
+    font-size: 1.75rem;
+    color: #4B0082;
+    margin-bottom: 10px;
+}
+
+.founder ul {
+    list-style: none;
+    padding: 0;
+}
+
+.founder li {
+    font-size: 1.1rem;
+    padding: 5px 0;
+}
+
+@media (max-width: 768px) {
+    .founder {
+        flex: 0 0 100%;
+        margin-bottom: 20px;
+    }
+}
