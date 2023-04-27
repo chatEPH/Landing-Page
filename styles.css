@@ -350,3 +350,40 @@ body {
         margin-bottom: 20px;
     }
 }
+
+/* Add this to your CSS file */
+
+.desktop-nav {
+    display: none;
+    background: linear-gradient(90deg, #4B0082 81.9%, rgba(75, 0, 130, 0) 106.01%);
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    bottom: 50;
+    left: 0;
+    right: 0px;
+    z-index: 1000;
+}
+
+.desktop-nav-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 20px;
+    margin-left: 20px;
+    transition: color 0.3s;
+}
+
+.desktop-nav-link:hover {
+    color: #ccc;
+}
+
+@media screen and (min-width: 769px) {
+    .desktop-nav {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-right: 20px;
+    }
+}
