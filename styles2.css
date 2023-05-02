@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
+
+
+
+#logo {
+    max-width: 10%; /* Adjust this value to change the logo size */
+    height: auto;
+    align-self: center;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Added to center the logo vertically within its container */
+    padding: 20px;
+    width: 100%; /* Added to ensure the container spans the full width of the viewport */
+}
+
+body {
+
+    font-family: Montserrat, sans-serif;
+    font-size: larger;
+    background: linear-gradient(180deg, #4B0082 62.6%, #F5F5F5 92%);
+    margin: 0;
+    padding: 0;
+}
+
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 1200px;
+    height: 75vh;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.chat-area {
+    flex: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.chat-bubble {
+    max-width: 70%;
+    padding: 10px;
+    border-radius: 20px;
+    margin-bottom: 5px;
+}
+
+.user {
+    align-self: flex-end;
+    background-color: lightgrey;
+}
+
+.chatbot {
+    align-self: flex-start;
+    background-color: purple;
+    color: white;
+}
+
+.input-area {
+    display: flex;
+    gap: 10px;
+}
+
+input[type="text"] {
+    flex: 1;
+    font-size: larger;
+    padding: 20px;
+    border: 1px solid lightgrey;
+    border-radius: 20px;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: purple;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkpurple;
+}
+
+
+.upload-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(128, 0, 128, 0.144);
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.upload-btn:hover {
+    background-color: darkpurple;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+/*... existing styles ...*/
+
+/*... existing styles ...*/
+
+.icon-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(128, 0, 128, 0.301);
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.icon-btn:hover {
+    background-color: darkpurple;
+}
+
+.icon-btn img {
+    width: 32px;
+    height: 32px;
+}
+
+::placeholder {
+    font-family: "Montserrat", sans-serif;
+}
+
+
+#backBtn {
+    position: fixed;
+    top: 25px;
+    left: 25px;
+    margin-bottom: 20px;
+    background-color: rgb(192, 33, 192);
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#backBtn img {
+    width: 50px;
+    height: 50px;
+}
+
+
+/*... existing styles ...*/
+
+@media (max-width: 768px) {
+    #logo {
+        max-width: 40%; /* Adjust this value to change the logo size on mobile devices */
+    }
+}

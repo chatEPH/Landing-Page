@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot UI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles2.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.12.313/pdf.min.js"></script>
+    
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <button id="backBtn" class="icon-btn">
+        <img src="back.png" alt="Back">
+    </button>
+
+    <div class="logo-container">
+        <img src="cowgif2.gif" alt="Logo" id="logo">
+    </div>
+    <div class="chat-container">
+        <div class="chat-area" id="chatArea">
+            <!-- Chat messages will appear here -->
+        </div>
+        <div class="input-area">
+            <input type="text" id="userInput" placeholder="Type your message...">
+            <label for="fileInput" class="icon-btn">
+                <img src="upload.png" alt="Upload File">
+            </label>
+            <input type="file" id="fileInput" hidden>
+            <button id="submitBtn" class="icon-btn">
+                <img src="send.png" alt="Send Message">
+            </button>
+        </div>
+    </div>
+</body>
+</html>
