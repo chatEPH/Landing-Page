@@ -82,7 +82,7 @@ input[type="file"] {
 }
 
 button {
-    padding: 10px 20px;
+    padding: 10px 10px;
     background-color: purple;
     color: white;
     border: none;
@@ -134,8 +134,8 @@ input[type="file"] {
 }
 
 .icon-btn img {
-    width: 32px;
-    height: 32px;
+    width: 15%;
+    height: 20%;
 }
 
 ::placeholder {
@@ -167,7 +167,7 @@ input[type="file"] {
     #logo {
         max-width: 40%; /* Adjust this value to change the logo size on mobile devices */
     }
-}
+
 
 
     .chat-container {
@@ -186,8 +186,9 @@ input[type="file"] {
     }
 
     input[type="text"] {
-        flex: 1;
-        font-size: 12px;
+        flex: 1 1 auto;
+        max-width: 55%;
+        font-size: 16px;
         padding: 20px;
         border: 1px solid lightgrey;
         border-radius: 20px;
@@ -199,6 +200,8 @@ input[type="file"] {
 
     button, .upload-btn, .icon-btn {
         padding: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
         font-size: 24px; /* Adjust the button font size on mobile devices */
     }
 
@@ -212,4 +215,4 @@ input[type="file"] {
         height: 40px;
     }
 
-
+}
