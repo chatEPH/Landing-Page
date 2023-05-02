@@ -168,3 +168,41 @@ input[type="file"] {
         max-width: 40%; /* Adjust this value to change the logo size on mobile devices */
     }
 }
+
+
+    .chat-container {
+        width: 80%; /* Adjust the chat container width on mobile devices */
+        margin-top: 10px;
+        height: 75vh;
+    }
+
+    .chat-area {
+        gap: 5px;
+    }
+
+    .chat-bubble {
+        max-width: 100%;
+        font-size: 18px; /* Adjust the chat bubble font size on mobile devices */
+    }
+
+    input[type="text"] {
+        font-size: 16px; /* Adjust the text input font size on mobile devices */
+        padding: 10px;
+    }
+
+    button, .upload-btn, .icon-btn {
+        padding: 10px;
+        font-size: 24px; /* Adjust the button font size on mobile devices */
+    }
+
+    .icon-btn img {
+        width: 30px;
+        height: 30px;
+    }
+
+    #backBtn img {
+        width: 40px;
+        height: 40px;
+    }
+
+
