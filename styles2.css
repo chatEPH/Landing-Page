@@ -186,9 +186,16 @@ input[type="file"] {
     }
 
     input[type="text"] {
-        font-size: 16px; /* Adjust the text input font size on mobile devices */
-        padding: 10px;
+        flex: 1;
+        font-size: 12px;
+        padding: 20px;
+        border: 1px solid lightgrey;
+        border-radius: 20px;
+        text-overflow: ellipsis; /* Add this to hide overflow */
+        white-space: nowrap; /* Add this to prevent wrapping */
+        overflow: hidden; /* Add this to hide overflow */
     }
+    
 
     button, .upload-btn, .icon-btn {
         padding: 10px;
@@ -196,8 +203,8 @@ input[type="file"] {
     }
 
     .icon-btn img {
-        width: 30px;
-        height: 30px;
+        width: 15px;
+        height: 15px;
     }
 
     #backBtn img {
