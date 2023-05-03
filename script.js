@@ -133,7 +133,7 @@ async function getGPT3Response(prompt, conversationHistory) {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': 'Bearer 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' // Replace YOUR_API_KEY with your actual API key
+        'Authorization': 'Bearer ######################################' // Replace YOUR_API_KEY with your actual API key
       },
       body: JSON.stringify({
         "model": "gpt-3.5-turbo", // Change to the desired model
